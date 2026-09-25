@@ -10,14 +10,17 @@ if (-not (Test-Path "assets/images")) {
     New-Item -ItemType Directory -Force -Path "assets/images" | Out-Null
 }
 
-# 2. Copy official profile photos
-Write-Host "[1/5] Copying official profile photos into repository..." -ForegroundColor Cyan
+# 2. Copy profile and anime avatar images
+Write-Host "[1/5] Updating profile photos and futuristic anime DevOps avatar..." -ForegroundColor Cyan
 Copy-Item "C:\Users\acer\.gemini\antigravity-ide\brain\a0c3b0ed-5b7f-4f65-8da1-501c7fee6add\.user_uploaded\media_1790352987102.jpg" "assets/images/riches-main.jpg" -Force
-Copy-Item "C:\Users\acer\.gemini\antigravity-ide\brain\a0c3b0ed-5b7f-4f65-8da1-501c7fee6add\.user_uploaded\media_1790352997624.jpg" "assets/images/riches-portrait.jpg" -Force
+Copy-Item "C:\Users\acer\.gemini\antigravity-ide\brain\a0c3b0ed-5b7f-4f65-8da1-501c7fee6add\anime_devops_avatar_1790356352791.jpg" "assets/images/riches-portrait.jpg" -Force
+Copy-Item "C:\Users\acer\.gemini\antigravity-ide\brain\a0c3b0ed-5b7f-4f65-8da1-501c7fee6add\anime_devops_avatar_1790356352791.jpg" "assets/images/riches-avatar.jpg" -Force
+Copy-Item "C:\Users\acer\.gemini\antigravity-ide\brain\a0c3b0ed-5b7f-4f65-8da1-501c7fee6add\anime_avatar_portrait_1790356379194.jpg" "assets/images/riches-anime-hud.jpg" -Force
 Copy-Item "C:\Users\acer\.gemini\antigravity-ide\brain\a0c3b0ed-5b7f-4f65-8da1-501c7fee6add\.user_uploaded\media_1790353003778.jpg" "assets/images/riches-mountain.jpg" -Force
 
 Write-Host "  - assets/images/riches-main.jpg (Main Profile Photo)" -ForegroundColor Green
-Write-Host "  - assets/images/riches-portrait.jpg (Dev Lab Portrait)" -ForegroundColor Green
+Write-Host "  - assets/images/riches-portrait.jpg (Futuristic Anime DevOps Avatar)" -ForegroundColor Green
+Write-Host "  - assets/images/riches-anime-hud.jpg (Cyberpunk HUD Avatar)" -ForegroundColor Green
 Write-Host "  - assets/images/riches-mountain.jpg (Kathmandu Valley Photo)" -ForegroundColor Green
 Write-Host ""
 
