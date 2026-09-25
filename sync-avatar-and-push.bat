@@ -28,7 +28,7 @@ git commit -m "Replace second image with futuristic anime DevOps engineer avatar
 
 echo.
 echo [3/3] Pushing changes to GitHub repository...
-git push origin main
+git push origin main --force
 
 echo.
 echo ========================================================
